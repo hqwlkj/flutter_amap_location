@@ -168,7 +168,7 @@ class AMapLocationClient {
       new StreamController.broadcast();
 
   /// 定位改变监听
-  static Stream<AMapLocation> get onLocationUpate =>
+  static Stream<AMapLocation> get onLocationUpdate =>
       _locationUpdateStreamController.stream;
 
   /// 设置ios的key，android可以直接在配置文件中设置
