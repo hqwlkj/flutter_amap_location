@@ -117,7 +117,7 @@ class _LocationListenState extends State {
         return;
       }
     }
-    AMapLocationClient.onLocationUpate.listen((AMapLocation loc) {
+    AMapLocationClient.onLocationUpdate.listen((AMapLocation loc) {
       if (!mounted) return;
       setState(() {
         location = getLocationStr(loc);
